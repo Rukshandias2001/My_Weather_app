@@ -461,6 +461,15 @@ body {
   .footer-container{
     padding-bottom: 400px;
   }
+
+
+}
+@media screen and (max-width: 600px){
+
+  .footer-container{
+    top: 200px;
+  }
+
 }
 
 
