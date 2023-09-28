@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="/My_Weather_app/secondproject/css/search.css">
+  <title>Document</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">MyweatherApp</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="search.html">Search</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="price.html">Pricing</a>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="search-box"> 
+    <input type="text" placeholder="where you want to search " class="inputtext" id="inputtext1">
+    <button class="inputbutton" id="btninput"><img src="/My_Weather_app/secondproject/cloudimage/search.png" alt="" class="inputimg"></button>
+  </div>
+  <div class="error" id="error1">
+    <p>Invalid city name !</p>
+  </div>
+  <div class="displaytemprature">
+    <div class="image">
+      <img src="/My_Weather_app/secondproject/cloudimage/rain.png" alt="" id="showimage" class="img">
+    </div>
+    <div class="temprature">
+      <h1 class="temp1" id="temp">2&deg;c</h1>
+      <h1 class="city" id="city1">New York</h1>
+    </div>
+    <div class="seconddata">
+      <div class="imagedata">
+        <img src="/My_Weather_app/secondproject/cloudimage/humidity.png" alt="" class="humid">
+        <div>
+          <h4 id="humidity" class="details">64%</h4>
+          <h5 id="percentage" class="details">humidity</h5>
+        </div>
+      </div>
+      <div class="thirddata">
+       <img src="/My_Weather_app/secondproject/cloudimage/wind.png" alt="" class="humid">
+       <div>
+        <h4 id="kmh" class="details">7.72Km/h</h4>
+        <h5 class="details">wind speed</h5>
+       </div>
+      </div>
+     
+    </div>
+  </div>
+
+  
+  <div class="footer-container">
+    <div class="footer">
+      <div class="footer-heading footer-1">
+        <h2>About Us</h2>
+        <a href="file:///Users/rukshandias/Desktop/newCart/newCart/comments.html">Blogs</a>
+        <a href="file:///Users/rukshandias/Desktop/newCart/newCart/comments.html">Demo</a>
+        <a href="file:///Users/rukshandias/Desktop/newCart/newCart/comments.html">Customers</a>
+        <a href="file:///Users/rukshandias/Desktop/newCart/newCart/comments.html">Investors</a>
+        <a href="file:///Users/rukshandias/Desktop/newCart/newCart/comments.html">Terms of Services</a>
+      </div>
+    
+      <div class="footer-heading footer-2">
+        <h2>Contact Us</h2>
+        <a href="file:///Users/rukshandias/Desktop/newCart/newCart/comments.html">Jobs</a>
+        <a href="file:///Users/rukshandias/Desktop/newCart/newCart/comments.html">Support</a>
+        <a href="file:///Users/rukshandias/Desktop/newCart/newCart/comments.html">Contact</a>
+        <a href="file:///Users/rukshandias/Desktop/newCart/newCart/comments.html">Sponsorships</a>
+      </div>
+  
+    <div class="footer-heading footer-3">
+      <h2>Social Media</h2>
+      <a href="file:///Users/rukshandias/Desktop/newCart/newCart/comments.html">Instagram</a>
+      <a href="file:///Users/rukshandias/Desktop/newCart/newCart/comments.html">Facebook</a>
+      <a href="file:///Users/rukshandias/Desktop/newCart/newCart/comments.html">YouTube</a>
+      <a href="file:///Users/rukshandias/Desktop/newCart/newCart/comments.html">Twitter</a>
+    </div>
+  
+    <div class="footer-email-form">
+      <h2>Join our newsletter</h2>
+      <input type="email" placeholder ="Enter your email address" id="footer-email">
+      <input type="submit" value ="Sign Up"
+      id="footer-email-btn">
+    </div>
+
+  </div>
+</div>
+  
+  
+</body>
+<script src="/My_Weather_app/secondproject/javascript/search.js"></script>
+</html>
