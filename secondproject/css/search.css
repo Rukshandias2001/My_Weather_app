@@ -6,6 +6,11 @@ body {
   height: 1140px;
  
 }
+.chart{
+  width: 400px;
+  background-color: rgb(0,0,0,0.8);
+  border-radius: 20px;
+}
 
 
 .search-box{
@@ -309,7 +314,8 @@ body {
     position: relative;
     display: flex;
     right: 40px;
-    gap: 10px;
+    gap: px;
+
   }
   .error{
     position: relative;
@@ -319,7 +325,7 @@ body {
     display: none;
   }
   .details{
-    font-size: 5px;
+    font-size: 10px;
   }
 }
 
