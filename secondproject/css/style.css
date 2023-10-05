@@ -12,7 +12,7 @@ body {
   position: relative;
   display: flex;
   flex-direction: rows;
-  top: 50px;
+  bottom: 500px;
   gap: 30px;
  
   background-color:  rgb(0, 0,0,0.8);
@@ -35,6 +35,17 @@ body {
   border-radius: 20px;
 
 }
+.piechart{
+  position: relative;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(0,0,0,0.8);
+  border-radius: 20px;
+  bottom: 600px;
+  left: 600px;
+}
+
 
 .box{
  
@@ -141,7 +152,7 @@ body {
 @media only screen and (max-width: 1350px){
 
   body{
-    height: 2500px;
+    height: 2800px;
 
   }
 
@@ -149,7 +160,7 @@ body {
     position: relative;
     display: grid;
     grid-template-columns: repeat(2,223px);
-    top: 300px;
+    top: 400px;
     gap: 30px;
     background-color:  rgb(0, 0,0,0.8);
     padding-right: 100%;
@@ -193,6 +204,10 @@ body {
     top: 200px;
     
   }
+  .piechart{
+    top:300px;
+    left: 50px ;
+  }
 }
 
 
@@ -200,7 +215,7 @@ body {
 @media only screen and  (max-width:700px){
 
   body{
-    height: 2500px;
+    height: 3000px;
 
   }
 
@@ -209,7 +224,7 @@ body {
     position: relative;
     display: grid;
     grid-template-columns: repeat(1,223px);
-    top: 300px;
+    bottom:500px;
     gap: 30px;
     background-color:  rgb(0, 0,0,0.8);
     padding-right: 100%;
@@ -336,6 +351,12 @@ body {
     width: 200px;
 
   }
+  .piechart{
+    bottom:60px ;
+    width: 250px;
+    height: 300px;
+  }
+  
 
 
 }
@@ -343,7 +364,7 @@ body {
 @media only screen and (max-width: 420px){
 
   body{
-    height: 2110px;
+    height: 3500px;
 
   }
 
@@ -351,12 +372,12 @@ body {
     position: relative;
     display: grid;
     grid-template-columns: repeat(1,223px);
-    top: 240px;
+    top: 400px;
     gap: 30px;
     background-color:  rgb(0, 0,0,0.8);
     padding-right: 350px;
     padding-bottom: 200px;
-    height: 1000px;
+    height: 1300px;
     
   }
 
@@ -392,13 +413,14 @@ body {
 
 .footer-container{
   position: relative;
-  top: 50px;
+  bottom: 500px; 
   background-color: #212329;
   padding:4rem 0 4rem 0;
   padding-bottom: 100px;
 
 }
 .footer{
+  
   width: 80%;
   height: 40vh;
   background-color: #212329;
@@ -407,6 +429,7 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 auto;
+ 
 
 }
 .footer-heading{
@@ -463,6 +486,10 @@ body {
 }
 
 @media screen and (max-width: 1150px){
+  .footer-container{
+    top: 400px;
+  }
+
   .footer{
     height: 50vh;
 
@@ -498,6 +525,12 @@ body {
 
   .footer-container{
     top: 200px;
+  }
+
+}
+@media screen and (max-width: 450px){
+  .footer-container{
+    top: 400px;
   }
 
 }

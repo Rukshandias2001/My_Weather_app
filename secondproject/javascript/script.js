@@ -368,13 +368,54 @@ function displaychart(day){
   }
   
 
+}
+
+async function getgaspercentage(){
+
+  const apiUrl1=`https://api.openweathermap.org/data/2.5/air_pollution?lat=6.773&lon=79.886&appid=${api_key}`
+  try{
+    const response = await fetch(apiUrl1);
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+   }
+   const data2 = await response.json();
+   console.log(data2);
+
+   var gas = data2.list[0].components;
+   console.log(gas);
+
+  var ctx1 = document.getElementById('myPieChart').getContext('2d');
+
+  // Create the pie chart
+  var myPieChart = new Chart(ctx1, {
+    type: 'pie', // Specify the chart type as pie
+    data: {
+      labels: ['CO', 'No2', 'No','O3',"SO2"], // Slice labels
+      datasets: [{
+        data: [gas.co,gas.no2,gas.no,gas.o3,gas.s02], // Values for each slice
+        backgroundColor: [
+          '#0DD8F1',
+          'BFF10D',
+          '#E50DF1',
+          '#0DF13F',
+          '#0D66F1',
+
+        ], // Slice colors
+        borderColor: [
+          '#0DD8F1',
+          'BFF10D',
+          'r#0DF1B1',
+          '#0DF13F',
+          '#0D66F1',
+        ], // Border colors
+        borderWidth: 1, // Border width
+      }],
+    },
+  });
+  }catch(error){
+    console.error('Error fetching weather data:', error);
+  }
   
-
-  
- 
-
-
-
-
 
 }
+getgaspercentage();
